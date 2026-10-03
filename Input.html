@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Input</title>
+    </head>
+    <body>
+        <form action="" method="get">
+        <label>Texto: </label><input type="text" placeholder="Digite algo"> <br>
+        <label>Número: </label><input type="number" min="0" step="5" max="100" placeholder="Digite um número"> <br>
+        <label>Intervalo: </label><input type="range" min="0" max="100" value="50"> <br>
+        <label>Cor: </label><input type="color" value="#000000"> <br>
+        <label>E-mail: </label><input type="email" placeholder="Digite seu e-mail"> <br>
+        <label>URL: </label><input type="url" placeholder="Digite a URL"> <br>
+        <label>Data: </label><input type="date" placeholder="Digite a data"> <br>
+        <label>Semana: </label><input type="week" placeholder="Digite a semana"> <br>
+        <label>Hora: </label><input type="time" placeholder="Digite a hora"> <br>
+        <label>Mês: </label><input type="month" placeholder="Digite o mês"> <br>
+        <label>Busca: </label><input type="search" placeholder="Digite um termo de busca"> <br>
+        <label>Arquivo: </label><input type="file" multiple placeholder="Selecione um ou mais arquivos"> <br>
+        <label>Caixa de seleção: </label><input type="checkbox" placeholder="Marque a opção"> <br>
+        <label>Botão de opção: </label><input type="radio" placeholder="Escolha uma opção"> <br>
+        <label>Campo oculto: </label><input type="hidden" value="valor oculto"><br>
+        <label>Enviar: </label><input type="submit" value="Enviar"> <br>
+        <label>Limpar: </label><button type="reset">Limpar</button> <br>
+        <label>Telefone: </label><input type="tel" placeholder="Digite o telefone"> <br>
+        <label>Senha: </label><input type="password" placeholder="Digite a senha"> <br>
+        <label>Data e hora: </label><input type="datetime-local" placeholder="Digite a data e a hora"> <br>
+        <label>Lista de opções: </label><input list="opcoes" placeholder="Escolha uma opção"><br>
+        <datalist id="opcoes">
+            <option value="Opção 1">
+            <option value="Opção 2">
+            <option value="Opção 3">
+        </datalist>
+        <label>Botão: </label><button type="submit" value="Enviar">Enviar</button> <br>
+        </form>
+    </body>
+</html>

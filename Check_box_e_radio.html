@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caixas de seleção e botões de opção</title>
+    </head>
+    <body>
+        <!--<form method="post">-->
+        <form>
+        <h3>Escolha um sabor de pizza</h3>
+        <input type="radio" disabled name="Sabores []"' value="Calabresa"> Calabresa <br>
+        <input type="radio" name="Sabores []"' value="Frango"> Frango <br>
+        <input type="radio" name="Sabores []"' value="Portuguesa"> Portuguesa <br>
+        <input type="radio" name="Sabores []"' value="Quatro Queijos"> Quatro Queijos <br>
+        <p><h3>Quer adicionar ingredientes extras?</h3></p>
+        <input type="checkbox" name="ingredientes[]" value="Cebola"> Cebola <br>
+        <input type="checkbox" name="ingredientes[]" value="Azeitona"> Azeitona <br>
+        <input type="checkbox" disabled name="ingredientes[]" value="Milho"> Milho <br>
+        <input type="checkbox" name="ingredientes[]" value="Catupiry"> Catupiry <br>
+        <p><h3>Escolha o tamanho da pizza:</h3></p>
+        <input type="radio" name="tamanho" value="Pequena"> Pequena <br>
+        <input type="radio" name="tamanho" value="Media"> Média <br>
+        <input type="radio" name="tamanho" value="Grande"> Grande <br>
+        <p><h3>Escolha a borda da pizza:</h3></p>
+        <input type="radio" name="borda" value="Tradicional"> Tradicional <br>
+        <input type="radio" name="borda" value="Recheada"> Recheada <br>
+        <p><h3>Escolha o recheio da borda:</h3></p>
+        <input type="radio" name="recheio" value="Cheddar"> Cheddar <br>
+        <input type="radio" name="recheio" value="Catupiry"> Catupiry <br>
+        <input type="radio" name="recheio" value="Chocolate"> Chocolate <br>
+        <p><h3>Escolha a bebida:</h3></p>
+        <input type="radio" name="bebida" value="Refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="Suco"> Suco <br>
+        <input type="radio" name="bebida" value="Água"> Água <br>
+        <p><h3>Escolha a forma de pagamento:</h3></p>
+        <input type="radio" name="pagamento" value="Dinheiro"> Dinheiro <br>
+        <input type="radio" name="pagamento" value="Cartão de Crédito"> Cartão de Crédito <br>
+        <input type="radio" name="pagamento" value="Cartão de Débito"> Cartão de Débito <br>
+        <input type="radio" name="pagamento" value="Pix"> Pix <br>
+        <p><h3>Escolha o método de entrega:</h3></p>
+        <input type="radio" disabled name="metodo_entrega" value="Entrega"> Entrega <br>
+        <input type="radio" name="metodo_entrega" value="Retirada"> Retirada <br>
+        <p></p>
+        <input type="submit" value="Enviar Pedido" onclick="alert('Pedido enviado com sucesso!')"> 
+        <button type="reset" value="Limpar Pedido">Limpar Pedido</button> <br>
+        </form>
+    </body>
+</html>

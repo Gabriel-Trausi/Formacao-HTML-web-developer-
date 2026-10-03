@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elemento select e suas opções</title>
+    </head>
+    <body>
+        <form>
+            <label> Nome: </label><input type="text" placeholder="Digite seu nome"> <br>
+            <label> Cargo:  </label>
+                <select name="role">
+                    <option value="">Selecione o cargo</option>
+                    <option value="Dev">Desenvolvedor</option>
+                    <option value="Designer">Designer</option>
+                    <option selected value="Manutenção aeronáutica">Manutenção aeronáutica</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Analista">Analista</option>
+                    <option value="Estagiário">Estagiário</option>
+                    <option value="Presidente">Presidente</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            <br>
+            <label> Assunto: </label><input type="text" placeholder="Escolha um assunto"> <br>
+            <label> Mensagem: </label> <textarea name="message" placeholder="Digite sua mensagem"></textarea> 
+            <br>
+            <button type="submit">Enviar</button> <br>
+        </form>
+    </body>
+</html>

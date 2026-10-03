@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fieldsets</title>
+        <style>
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin: 15px 0;
+                border-radius: 5px;
+            }
+            legend {
+                font-weight: bold;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulário de cadastro</h1>
+        <form>
+                <fieldset>
+                    <legend>Informações pessoais</legend>
+                    <div class="row">
+                        <label>Nome: </label><input type="text" placeholder="Digite seu nome" />
+                        <label>Data de Nascimento: </label><input type="date" placeholder="Digite sua data de nascimento" />
+                        <label>E-mail: </label><input type="email" placeholder="Digite seu e-mail" />
+                        <label>Telefone: </label><input type="number" placeholder="Digite seu telefone" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>Endereço</legend>
+                    <div class="row">
+                        <label>Rua: </label><input type="text" placeholder="Digite sua rua" />
+                        <label>Número: </label><input type="number" placeholder="Digite o número da sua casa" />
+                        <label>Cidade: </label><input type="text" placeholder="Digite sua cidade" />
+                        <label>Estado: </label>
+                            <select name="rule"="">
+                                <option value="">Selecione seu estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option selected value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>Informações de Contato</legend>
+                    <div class="row">
+                        <label>WhatsApp: </label><input type="number" placeholder="Digite seu número do WhatsApp" />
+                        <label>LinkedIn: </label><input type="text" placeholder="Digite seu perfil do LinkedIn" />
+                    </div>
+                <button type="submit" onclick="alert('Formulário enviado!')">Enviar</button>
+                <button type="reset" onclick="alert('Formulário limpo!')">Limpar</button>
+        </form>
+    </body>
+</html>

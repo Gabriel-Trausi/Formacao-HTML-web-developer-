@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recursos especiais</title>
+        <style>
+            kbd{
+                border: solid 1px black;
+            }
+            code{
+                color: #ff0000;
+                background-color: aliceblue;
+            }
+            pre{
+                background-color: aliceblue;
+                color: #ff0000;
+                
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <input list="Browsers" type="search" name="Search" placeholder="Escolha o navegador" />
+        <datalist id="Browsers">
+            <option >Google Chrome</option>
+            <option>Opera GX</option>
+            <option>Mozilla Firefox</option>
+            <option>Microsoft Edge</option>
+            <option >Safari</option>
+        </datalist>
+
+        <hr>
+
+        <select name="Browser">
+            <option value="">Selecione um navegador</option>
+            <option value="Chrome">Google Chrome</option>
+                    <option value="Opera">Opera GX</option>
+                    <option value="Firefox">Mozilla Firefox</option>
+                    <option value="Edge">Microsoft Edge</option>
+            <option value="Safari">Safari</option>
+        </select>
+
+        <hr>
+
+        <p>Para copiar essa informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+        <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code></p>
+        <p>Comando completo de alterar cor de fundo:</p>
+        <pre>
+            code{
+                color: red;
+                background-color: aliceblue;
+            }
+        </pre>
+
+        <hr>
+
+        <details>
+            <summary>Como troco a cor de fundo de um elemento no HTML?</summary>
+            <p>Para realizar essa ação, utilize a propriedade <code>background-color</code> no CSS.</p>
+        </details>
+
+        <hr>
+
+        <meter max="100" min="0" value="35"></meter>
+        <progress id="progress" max="100" min="0"></progress>
+        <script>
+            var progress = document.getElementById('progress')
+            const interval = setInterval (() => {
+            progress.value += 10;
+            if (progress.value >= 100){
+                alert('Carregado com sucesso')
+                clearInterval(interval);
+            };
+            }, 150)
+        </script>
+
+        <hr>
+
+        <input type="text" id="buscar" placeholder="Busque uma palavra"><br>
+        <p id="descricao">Este curso tem como finalidade mostrar o funcionamento da tag &lt;mark&gt; em conjunto com JavaScript.</p>
+        <script>
+            var searchfield = document.getElementById('buscar');
+            var descriptionobject = document.getElementById('descricao');
+            var texttosearch = descriptionobject.innerHTML;
+
+            function realizabusca(busca){
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+                descriptionobject.innerHTML = texttosearch.replace(regex, '<mark>$1</mark>');
+            }
+            searchfield.addEventListener('keyup', (e) => realizabusca(e.target.value)); 
+        </script>
+
+        <hr>
+
+        
+    </body>
+</html>
